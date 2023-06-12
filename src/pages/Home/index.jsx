@@ -3,6 +3,8 @@ import Menu from '../../components/Menu'
 import styles from './Home.module.scss'
 import Banner from '../../components/Banner'
 import Rodape from '../../components/Rodape'
+import Galeria from '../../components/Galeria'
+import Populares from '../../components/Populares'
 
 export default function Home() {
   return (
@@ -13,6 +15,10 @@ export default function Home() {
           <Menu />
           <Banner />
         </section>
+        <div className={styles.galeria}>
+          <Galeria />
+          <Populares />
+        </div>
       </main>
       <Rodape />
     </>
